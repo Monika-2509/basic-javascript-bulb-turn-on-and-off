@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="img/svg" href="lightbulb.svg"/>
+    <style>
+        body{
+            background-color:black;
+            color:white;
+        }
+        img {
+            height: 200px;
+            width: 200px;
+        }
+        .container{
+            text-align:center;
+            margin-top:150px;
+            border:1px dotted white;
+            margin-left:500px;
+            width: 300px;
+            height:400px;
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+    <h1>BULB ON OFF</h1>
+    <p>Bulb on off using javascript</p>
+    <img id="onimg"  src="Screenshot 2024-01-31 133848.png" draggable="false"/><br>
+
+    
+    <p>
+        <button onclick="change()">TURN ON</button>
+        <button onclick="change1()"> TURN OFF</button>
+    </p>
+    </div>
+    <script>
+        var On = document.getElementById('onimg')
+        function change() {
+             On.src= "on.png";
+        }
+        function change1() {
+            On.src="Screenshot 2024-01-31 133848.png"
+        }
+    </script>
+</body>
+
+</html>
